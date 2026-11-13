@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-
 if os.path.isfile('env.py'):
     import env
 
@@ -31,7 +30,7 @@ SECRET_KEY = 'bd77ba2e05f09adaca3f8faa90e63e77b9d026c0bd38639874d161bd2afab5c4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [".herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = [".herokuapp.com", "127.0.0.1",]
 
 
 # Application definition
@@ -95,7 +94,7 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
-    "https://*.heroku.com",
+    "https://*.herokuapp.com",
 ]
 
 
