@@ -18,8 +18,9 @@ def post_detail(request, slug):
     
     **Context**
     
-    ``Post``
+    ``post``
         An instance of :model: `blog.Post`.
+    ``comments``
         
     **Template**
     
